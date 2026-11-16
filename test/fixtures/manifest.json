@@ -1,0 +1,152 @@
+{
+  "go": "go1.26.1",
+  "garble": false,
+  "fixtures": [
+    {
+      "file": "basic.linux-amd64-syms.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "linux",
+      "goarch": "amd64",
+      "symbols": true,
+      "size": 1666068,
+      "sha256": "6543dc41e7c1c12d1a7b70fcc41c83dfa20261bf6218c4284b61ad9c10d51736"
+    },
+    {
+      "file": "basic.linux-amd64.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "linux",
+      "goarch": "amd64",
+      "symbols": false,
+      "size": 1536126,
+      "sha256": "5a8dc8563883919a1fa08297aa67aff6ba3bda7b5c6d22a310cc8e94499f9c81"
+    },
+    {
+      "file": "basic.linux-arm64.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "linux",
+      "goarch": "arm64",
+      "symbols": false,
+      "size": 1572990,
+      "sha256": "97c861a3e439ecf62169c0f29911eb4463ca97893b97ab7af657df86bca4b8f8"
+    },
+    {
+      "file": "basic.linux-386.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "linux",
+      "goarch": "386",
+      "symbols": false,
+      "size": 1446014,
+      "sha256": "1f7cc5372f05e27c5bf08fef36d20ee6e45a799cb46d210115aa00e4996c84c7"
+    },
+    {
+      "file": "basic.windows-amd64.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "windows",
+      "goarch": "amd64",
+      "symbols": false,
+      "size": 1673216,
+      "sha256": "b879863e58618727cba3c643e3522df9066a4281023d05fb2d605cfe879db251"
+    },
+    {
+      "file": "basic.windows-386.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "windows",
+      "goarch": "386",
+      "symbols": false,
+      "size": 1564160,
+      "sha256": "6d7e805b03bb9836b10ef96d949274d2389f5623afd19bf3cb08c89aa771d754"
+    },
+    {
+      "file": "basic.darwin-amd64.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "darwin",
+      "goarch": "amd64",
+      "symbols": false,
+      "size": 1550784,
+      "sha256": "9721d3d7d65f960e827605ee4b62fe6c96dfe3915c0f8ba297497e66babde011"
+    },
+    {
+      "file": "basic.darwin-arm64.gz",
+      "program": "basic",
+      "tool": "go",
+      "goos": "darwin",
+      "goarch": "arm64",
+      "symbols": false,
+      "size": 1488658,
+      "sha256": "c51b8cab578a75c1d4941139177a740af889268e6d3f6ae98c8c8ec08f365f7d"
+    },
+    {
+      "file": "garblelike.linux-amd64.gz",
+      "program": "garblelike",
+      "tool": "go",
+      "goos": "linux",
+      "goarch": "amd64",
+      "symbols": false,
+      "size": 1409150,
+      "sha256": "8bb607633d37462bd39bafa98bc1a7b14fbe4e29fa166d78e7bdc102fd80ff95"
+    },
+    {
+      "file": "garblelike.windows-amd64.gz",
+      "program": "garblelike",
+      "tool": "go",
+      "goos": "windows",
+      "goarch": "amd64",
+      "symbols": false,
+      "size": 1497600,
+      "sha256": "ad80ce20fe7a33aa43eee2f1c579ee3e44c2d2f45a984fe59e622b222e046dce"
+    },
+    {
+      "file": "gobflike.linux-amd64.gz",
+      "program": "gobflike",
+      "tool": "go",
+      "goos": "linux",
+      "goarch": "amd64",
+      "symbols": false,
+      "size": 1405054,
+      "sha256": "144bd065aeee52d369483d2eba3120253dc111570651167912a2ce7f3d1a6aa0"
+    }
+  ],
+  "literals": {
+    "garble": [
+      {
+        "family": "simple",
+        "value": "https://cdn.peel-fixture.test/v2/config.json"
+      },
+      {
+        "family": "simple",
+        "value": "update.peel-fixture.test"
+      },
+      {
+        "family": "simple",
+        "value": "harmless sample string"
+      },
+      {
+        "family": "swap",
+        "value": "198.51.100.23:8443"
+      },
+      {
+        "family": "split",
+        "value": "peel-fixture: split literal recovered"
+      },
+      {
+        "family": "shuffle",
+        "value": "Software\\PeelFixture\\Settings"
+      },
+      {
+        "family": "seed",
+        "value": "fixture-token-not-a-secret"
+      }
+    ],
+    "gobf": [
+      "http://198.51.100.99/status",
+      "peel gobfuscate-style fixture"
+    ]
+  }
+}
